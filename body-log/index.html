@@ -18,16 +18,20 @@
   </head>
   <body>
     <!-- 첫 방문 시 노출 / LocalStorage에 기본정보 없으면 표시 -->
-  <section id="setup-section">
-    <h1>⚖️ WeightLog</h1>
-    <h2>기본 정보를 입력해주세요</h2>
-    <div class="setup-form">
-      <div class="gender-group">
-        <label>성별</label>
-        <div class="radio-options">
-            <label><input type="radio" name="gender" value="male" /> 남성</label>
-            <label><input type="radio" name="gender" value="female" /> 여성</label>
-        </div>
+    <section id="setup-section">
+      <h1>⚖️ WeightLog</h1>
+      <h2>기본 정보를 입력해주세요</h2>
+      <div class="setup-form">
+        <div class="gender-group">
+          <label>성별</label>
+          <div class="radio-options">
+            <label
+              ><input type="radio" name="gender" value="male" /> 남성</label
+            >
+            <label
+              ><input type="radio" name="gender" value="female" /> 여성</label
+            >
+          </div>
         </div>
         <div class="height-group">
           <label for="height-input">키 (cm)</label>
@@ -36,13 +40,19 @@
         <div class="consent-group">
           <p>정보 저장 방식</p>
           <div class="consent-options">
-              <label><input type="radio" name="consent" value="cookie" /> 쿠키에 저장 (브라우저를 닫아도 유지)</label>
-              <label><input type="radio" name="consent" value="session" /> 세션에 저장 (브라우저를 닫으면 삭제)</label>
+            <label
+              ><input type="radio" name="consent" value="cookie" /> 쿠키에 저장
+              (브라우저를 닫아도 유지)</label
+            >
+            <label
+              ><input type="radio" name="consent" value="session" /> 세션에 저장
+              (브라우저를 닫으면 삭제)</label
+            >
           </div>
         </div>
         <button id="setup-save-btn">시작하기</button>
-    </div>
-  </section>
+      </div>
+    </section>
 
     <!-- 재방문 or 기본정보 저장 후 노출 -->
     <main id="main-section">

@@ -32,7 +32,7 @@ const renderRecordList = (records, heightCm) => {
 
   // 날짜 내림차순 정렬
   const sortedRecords = [...records].sort((firstRecord, secondRecord) =>
-    secondRecord.date.localeCompare(firstRecord.date)
+    secondRecord.date.localeCompare(firstRecord.date),
   );
 
   sortedRecords.forEach((record) => {

@@ -2,335 +2,339 @@
    CSS 변수
    ===================== */
 :root {
-    --glass-bg: rgba(255, 255, 255, 0.15);
-    --glass-bg-strong: rgba(255, 255, 255, 0.25);
-    --glass-border: rgba(255, 255, 255, 0.3);
-    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
-    --glass-blur: blur(16px);
+  --glass-bg: rgba(255, 255, 255, 0.15);
+  --glass-bg-strong: rgba(255, 255, 255, 0.25);
+  --glass-border: rgba(255, 255, 255, 0.3);
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  --glass-blur: blur(16px);
 
-    --color-primary: #ff8c6b;
-    --color-primary-dark: #e86b48;
-    --color-accent: #ffb347;
-    --color-text: #1e1e2e;
-    --color-text-light: rgba(30, 30, 46, 0.6);
-    --color-white: #ffffff;
-    --color-warning: #ef4444;
+  --color-primary: #ff8c6b;
+  --color-primary-dark: #e86b48;
+  --color-accent: #ffb347;
+  --color-text: #1e1e2e;
+  --color-text-light: rgba(30, 30, 46, 0.6);
+  --color-white: #ffffff;
+  --color-warning: #ef4444;
 
-    --radius-sm: 12px;
-    --radius-md: 20px;
-    --radius-lg: 28px;
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 28px;
 
-    --font-display: 'Pretendard', 'Apple SD Gothic Neo', sans-serif;
+  --font-display: "Pretendard", "Apple SD Gothic Neo", sans-serif;
 }
 
 /* =====================
    배경
    ===================== */
 body {
-    font-family: var(--font-display);
-    color: var(--color-text);
-    background: linear-gradient(135deg, #ffe8d6 0%, #ffd6c8 40%, #ffecd2 100%);
-    min-height: 100vh;
-    position: relative;
-    overflow-x: hidden;
+  font-family: var(--font-display);
+  color: var(--color-text);
+  background: linear-gradient(135deg, #ffe8d6 0%, #ffd6c8 40%, #ffecd2 100%);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
 }
 
 body::before,
 body::after {
-    content: '';
-    position: fixed;
-    border-radius: 50%;
-    filter: blur(80px);
-    z-index: 0;
-    pointer-events: none;
+  content: "";
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(80px);
+  z-index: 0;
+  pointer-events: none;
 }
 
 body::before {
-    width: 500px;
-    height: 500px;
-    background: rgba(255, 140, 107, 0.3);
-    top: -100px;
-    left: -100px;
+  width: 500px;
+  height: 500px;
+  background: rgba(255, 140, 107, 0.3);
+  top: -100px;
+  left: -100px;
 }
 
 body::after {
-    width: 400px;
-    height: 400px;
-    background: rgba(255, 179, 71, 0.25);
-    bottom: -80px;
-    right: -80px;
+  width: 400px;
+  height: 400px;
+  background: rgba(255, 179, 71, 0.25);
+  bottom: -80px;
+  right: -80px;
 }
 
 /* =====================
    메인 레이아웃
    ===================== */
 #main-section {
-    position: relative;
-    z-index: 1;
-    max-width: 480px;
-    margin: 0 auto;
-    padding: 24px 16px 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  position: relative;
+  z-index: 1;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 /* =====================
    헤더
    ===================== */
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 24px;
-    background: var(--glass-bg-strong);
-    backdrop-filter: var(--glass-blur);
-    -webkit-backdrop-filter: var(--glass-blur);
-    border: 1px solid var(--glass-border);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--glass-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  background: var(--glass-bg-strong);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--glass-shadow);
 }
 
 header h1 {
-    font-size: 1.4rem;
-    font-weight: 800;
-    letter-spacing: -0.3px;
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: -0.3px;
 }
 
 #today-date {
-    font-size: 0.85rem;
-    font-weight: 500;
-    color: var(--color-text-light);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text-light);
 }
 
 /* =====================
    타이머 섹션
    ===================== */
 #timer-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    padding: 36px 24px;
-    background: var(--glass-bg-strong);
-    backdrop-filter: var(--glass-blur);
-    -webkit-backdrop-filter: var(--glass-blur);
-    border: 1px solid var(--glass-border);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--glass-shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 36px 24px;
+  background: var(--glass-bg-strong);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--glass-shadow);
 }
 
 #timer-display {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    font-size: 5rem;
-    font-weight: 800;
-    letter-spacing: -2px;
-    color: var(--color-text);
-    font-variant-numeric: tabular-nums;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 5rem;
+  font-weight: 800;
+  letter-spacing: -2px;
+  color: var(--color-text);
+  font-variant-numeric: tabular-nums;
 }
 
 .timer-colon {
-    animation: blink 1s step-end infinite;
-    margin-bottom: 6px;
+  animation: blink 1s step-end infinite;
+  margin-bottom: 6px;
 }
 
 @keyframes blink {
-    0%,
-    100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 #timer-status {
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: var(--color-text-light);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text-light);
 }
 
 #timer-controls {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 #timer-controls button {
-    padding: 12px 24px;
-    border-radius: var(--radius-sm);
-    font-size: 0.95rem;
-    font-weight: 700;
-    transition: all 0.2s ease;
+  padding: 12px 24px;
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  font-weight: 700;
+  transition: all 0.2s ease;
 }
 
 #start-btn {
-    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
-    color: var(--color-white);
-    box-shadow: 0 4px 16px rgba(255, 140, 107, 0.4);
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-accent)
+  );
+  color: var(--color-white);
+  box-shadow: 0 4px 16px rgba(255, 140, 107, 0.4);
 }
 
 #start-btn:hover:not(:disabled) {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(255, 140, 107, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 140, 107, 0.5);
 }
 
 #stop-btn {
-    background: rgba(255, 255, 255, 0.3);
-    color: var(--color-text);
-    border: 1px solid var(--glass-border);
+  background: rgba(255, 255, 255, 0.3);
+  color: var(--color-text);
+  border: 1px solid var(--glass-border);
 }
 
 #stop-btn:hover:not(:disabled) {
-    background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.5);
 }
 
 #reset-btn {
-    background: rgba(255, 255, 255, 0.2);
-    color: var(--color-text-light);
-    border: 1px solid var(--glass-border);
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--color-text-light);
+  border: 1px solid var(--glass-border);
 }
 
 #reset-btn:hover:not(:disabled) {
-    background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.4);
 }
 
 button:disabled {
-    opacity: 0.4;
-    cursor: not-allowed;
+  opacity: 0.4;
+  cursor: not-allowed;
 }
 
 /* =====================
    경고 배너
    ===================== */
 #warning-section {
-    padding: 16px 24px;
-    background: rgba(239, 68, 68, 0.15);
-    backdrop-filter: var(--glass-blur);
-    -webkit-backdrop-filter: var(--glass-blur);
-    border: 1px solid rgba(239, 68, 68, 0.3);
-    border-radius: var(--radius-md);
-    text-align: center;
-    font-size: 0.95rem;
-    font-weight: 600;
-    color: var(--color-warning);
-    animation: pulse 2s ease-in-out infinite;
+  padding: 16px 24px;
+  background: rgba(239, 68, 68, 0.15);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: var(--radius-md);
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-warning);
+  animation: pulse 2s ease-in-out infinite;
 }
 
 @keyframes pulse {
-    0%,
-    100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.6;
-    }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 /* =====================
    오늘 기록 섹션
    ===================== */
 #record-section {
-    padding: 24px;
-    background: var(--glass-bg);
-    backdrop-filter: var(--glass-blur);
-    -webkit-backdrop-filter: var(--glass-blur);
-    border: 1px solid var(--glass-border);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--glass-shadow);
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  padding: 24px;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--glass-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 #record-section h2 {
-    font-size: 0.85rem;
-    font-weight: 700;
-    color: var(--color-text-light);
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 #summary {
-    display: flex;
-    gap: 12px;
+  display: flex;
+  gap: 12px;
 }
 
 .summary-item {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    padding: 16px;
-    background: rgba(255, 255, 255, 0.25);
-    border: 1px solid var(--glass-border);
-    border-radius: var(--radius-sm);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-sm);
 }
 
 .summary-label {
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: var(--color-text-light);
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 .summary-value {
-    font-size: 1.4rem;
-    font-weight: 800;
-    color: var(--color-primary-dark);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--color-primary-dark);
 }
 
 /* 세션 목록 */
 #session-list {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .session-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 16px;
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid var(--glass-border);
-    border-radius: var(--radius-sm);
-    font-size: 0.875rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
 }
 
 .session-time {
-    font-weight: 600;
-    color: var(--color-text);
+  font-weight: 600;
+  color: var(--color-text);
 }
 
 .session-duration {
-    font-weight: 700;
-    color: var(--color-primary-dark);
+  font-weight: 700;
+  color: var(--color-primary-dark);
 }
 
 .empty-message {
-    text-align: center;
-    padding: 20px;
-    color: var(--color-text-light);
-    font-size: 0.9rem;
+  text-align: center;
+  padding: 20px;
+  color: var(--color-text-light);
+  font-size: 0.9rem;
 }
 
 /* =====================
    반응형
    ===================== */
 @media (max-width: 480px) {
-    #timer-display {
-        font-size: 4rem;
-    }
+  #timer-display {
+    font-size: 4rem;
+  }
 
-    #timer-controls button {
-        padding: 10px 18px;
-        font-size: 0.875rem;
-    }
+  #timer-controls button {
+    padding: 10px 18px;
+    font-size: 0.875rem;
+  }
 }

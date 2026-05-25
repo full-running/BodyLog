@@ -1,48 +1,48 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    font-size: 16px;
-    -webkit-text-size-adjust: 100%;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-    min-height: 100vh;
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
 input,
 button,
 select,
 textarea {
-    font: inherit;
-    border: none;
-    outline: none;
-    background: none;
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 table {
-    border-collapse: collapse;
-    width: 100%;
+  border-collapse: collapse;
+  width: 100%;
 }
 
 ul,
 ol {
-    list-style: none;
+  list-style: none;
 }
 
 img,
 video {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
 }

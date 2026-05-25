@@ -78,7 +78,7 @@ const handleSetupSave = () => {
   const selectedGender = document.querySelector("input[name='gender']:checked");
   const heightInput = document.getElementById("height-input").value;
   const selectedConsent = document.querySelector(
-    "input[name='consent']:checked"
+    "input[name='consent']:checked",
   );
 
   if (selectedGender === null) {

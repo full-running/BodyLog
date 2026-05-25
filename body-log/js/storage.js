@@ -93,7 +93,7 @@ const addRecord = (newRecord) => {
 // 체중 기록 삭제 (id 기준)
 const deleteRecord = (targetId) => {
   const filteredRecords = loadAllRecords().filter(
-    (record) => record.id !== targetId
+    (record) => record.id !== targetId,
   );
   saveAllRecords(filteredRecords);
 };
@@ -101,7 +101,7 @@ const deleteRecord = (targetId) => {
 // 체중 기록 수정 (id 기준)
 const updateRecord = (targetId, updatedFields) => {
   const updatedRecords = loadAllRecords().map((record) =>
-    record.id === targetId ? { ...record, ...updatedFields } : record
+    record.id === targetId ? { ...record, ...updatedFields } : record,
   );
   saveAllRecords(updatedRecords);
 };

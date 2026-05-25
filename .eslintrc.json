@@ -8,6 +8,7 @@
     "sourceType": "script"
   },
   "rules": {
+    "indent": ["error", 2, { "SwitchCase": 1 }],
     "strict": ["error", "global"],
     "no-var": "error",
     "no-unused-vars": "warn",
